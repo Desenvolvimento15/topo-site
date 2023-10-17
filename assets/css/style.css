@@ -1,11 +1,63 @@
 *{
-    margin: 0;
-    padding: 0;
+margin: 0;
+padding: 0;
 }
+
 @import url("https://i02.appmifile.com/i18n/fonts/CamphorPro/vf/index.css");
 @import url("https://i02.appmifile.com/i18n/fonts/CamphorPro/woff2/index.css");
 
 .topo-mibrasil{
+display: flex;
+gap: 1rem;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: center;
+align-items: center;
+background: #ff6900;
+width: 100%;
+height: 2rem;
+color: #fff;
+font-family: "Camphor Pro";
+}
+
+.grid-icon-info{
+display: flex;
+gap: 0.3rem;
+}
+
+.slide {
+text-align: center;
+transform: translateX(-100vw);
+animation: 10s slideIn forwards;
+}  
+
+@keyframes slideIn {
+0%   { transform : translateX(-100vw); }
+100% { transform : translateX(0);      }
+}
+
+
+.mob{
+    display: none;
+}
+.dektop{
+    display: block;
+}
+
+
+
+
+@media screen and (max-width:924px) {
+
+    
+.mob{
+    display: block;
+}
+.desktop{
+    display: none;
+}
+
+    .topo-mibrasil{
     display: flex;
     gap: 1rem;
     flex-direction: row;
@@ -17,9 +69,10 @@
     height: 2rem;
     color: #fff;
     font-family: "Camphor Pro";
-}
+    font-size: 0.7rem;
+    }
 
-.grid-icon-info{
-    display: flex;
-    gap: 0.3rem;
+
+
+    
 }
