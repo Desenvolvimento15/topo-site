@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url("https://i02.appmifile.com/i18n/fonts/CamphorPro/vf/index.css");
+@import url("https://i02.appmifile.com/i18n/fonts/CamphorPro/woff2/index.css");
+
+.topo-mibrasil{
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background: #ff6900;
+    width: 100%;
+    height: 2rem;
+    color: #fff;
+    font-family: "Camphor Pro";
+}
+
+.grid-icon-info{
+    display: flex;
+    gap: 0.4rem;
+}
