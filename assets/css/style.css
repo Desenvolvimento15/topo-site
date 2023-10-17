@@ -1,6 +1,7 @@
 *{
 margin: 0;
 padding: 0;
+box-sizing: border-box;
 }
 
 @import url("https://i02.appmifile.com/i18n/fonts/CamphorPro/vf/index.css");
@@ -25,17 +26,46 @@ display: flex;
 gap: 0.3rem;
 }
 
-.slide {
-text-align: center;
-transform: translateX(-100vw);
-animation: 10s slideIn forwards;
-}  
 
-@keyframes slideIn {
-0%   { transform : translateX(-100vw); }
-100% { transform : translateX(0);      }
-}
 
+
+.scroll-text {
+    text-align: right;
+  
+    /* animation properties */
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    
+    -moz-animation: my-animation 15s linear infinite;
+    -webkit-animation: my-animation 15s linear infinite;
+    animation: my-animation 15s linear infinite;
+  }
+  
+  /* for Firefox */
+  @-moz-keyframes my-animation {
+    from { -moz-transform: translateX(-100%); }
+    to { -moz-transform: translateX(100%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(-100%); }
+    to { -webkit-transform: translateX(100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+    to {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+  }
 
 .mob{
     display: none;
@@ -43,9 +73,6 @@ animation: 10s slideIn forwards;
 .dektop{
     display: block;
 }
-
-
-
 
 @media screen and (max-width:924px) {
 
