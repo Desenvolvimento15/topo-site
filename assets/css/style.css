@@ -34,7 +34,8 @@ align-items: center;
 .dektop{display: block;}
 
 
-@media screen and (max-width:924px) {
+
+@media screen and (max-width:767px) {
     
 .mob{display: block;}
 .desktop{display: none;}
@@ -48,8 +49,62 @@ color: #fff;
 font-family: "Camphor Pro";
 justify-content: center;
 gap: 1rem;
-height: 2rem;
+height: 3rem;
 box-sizing: border-box;
 }
+
+.grid-icon-info {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+align-content: center;
+justify-content: center;
+align-items: center;
+margin: 1rem;
+}
+
+
+
+.item-1{
+	animation-name: anim-1;
+}
+
+.item-2{
+	animation-name: anim-2;
+}
+
+.item-3{
+	animation-name: anim-3;
+}
+
+.item-1, 
+.item-2, 
+.item-3 {
+position: absolute;
+display: block;  
+animation-duration: 10s;
+animation-timing-function:ease;
+animation-iteration-count: infinite;
+}
+
+@keyframes anim-1 {
+  0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 25%; opacity: 1; }
+  33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+  0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 25%; opacity: 1; }
+  66.66%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+  0%, 66.66% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 25%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+}
+
+
     
 }
