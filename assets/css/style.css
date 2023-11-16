@@ -7,7 +7,37 @@ box-sizing: border-box;
 @import url("https://i02.appmifile.com/i18n/fonts/CamphorPro/vf/index.css");
 @import url("https://i02.appmifile.com/i18n/fonts/CamphorPro/woff2/index.css");
 
+.topo-mibrasil {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+background: #ff6900;
+color: #fff;
+font-family: "Camphor Pro";
+justify-content: center;
+gap: 1rem;
+height: 2rem;
+box-sizing: border-box;
+}
 
+.grid-icon-info {
+display: flex;
+gap: 0.3rem;
+flex-direction: row;
+flex-wrap: nowrap;
+align-content: center;
+justify-content: center;
+align-items: center;
+}
+
+.mob{display: none;}
+.dektop{display: block;}
+
+
+@media screen and (max-width:924px) {
+    
+.mob{display: block;}
+.desktop{display: none;}
 
 .topo-mibrasil {
 display: flex;
@@ -19,40 +49,7 @@ font-family: "Camphor Pro";
 justify-content: center;
 gap: 1rem;
 height: 2rem;
-}
-
-.grid-icon-info{
-display: flex;
-gap: 0.3rem;
-}
-
-.mob{display: none;}
-.dektop{display: block;}
-
-@media screen and (max-width:924px) {
-    
-.mob{display: block;}
-.desktop{display: none;}
-
-.topo-mibrasil{
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-justify-content: center;
-align-items: center;
-background: #ff6900;
-
-color: #fff;
-font-family: "Camphor Pro";
-}
-
-.galeria{margin-left: 25% }
-
-.galeria,
-*[class^="galeria"] {
-  display: inline-block;
-  white-space: nowrap;
-  position: absolute;
+box-sizing: border-box;
 }
     
 }
