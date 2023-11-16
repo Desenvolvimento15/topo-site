@@ -7,6 +7,8 @@ box-sizing: border-box;
 @import url("https://i02.appmifile.com/i18n/fonts/CamphorPro/vf/index.css");
 @import url("https://i02.appmifile.com/i18n/fonts/CamphorPro/woff2/index.css");
 
+
+
 .topo-mibrasil {
 display: flex;
 flex-direction: row;
@@ -16,6 +18,7 @@ color: #fff;
 font-family: "Camphor Pro";
 justify-content: center;
 gap: 1rem;
+height: 2rem;
 }
 
 .grid-icon-info{
