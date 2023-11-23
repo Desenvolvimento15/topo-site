@@ -33,8 +33,6 @@ align-items: center;
 .mob{display: none;}
 .dektop{display: block;}
 
-
-
 @media screen and (max-width:767px) {
     
 .mob{display: block;}
@@ -60,10 +58,9 @@ flex-wrap: nowrap;
 align-content: center;
 justify-content: center;
 align-items: center;
-margin: 1rem;
+text-align: center;
+margin-top: 1rem;
 }
-
-
 
 .item-1{
 	animation-name: anim-1;
