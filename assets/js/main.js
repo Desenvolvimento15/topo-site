@@ -1,8 +1,8 @@
 $(function (){
 
   createGaleria({
-    duration:80000, 
-    padding:20
+    duration:50000, 
+    padding:50
   });
 
 });
